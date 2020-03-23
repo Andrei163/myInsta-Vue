@@ -1,28 +1,59 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
+  <!-- <logo />
+  <headerSearch />
+  <buttons />
+  <stories />
+  <newsContent />
+  <newsContent />
+  <newsContent />
+  <newsContent />
+  <newsContent />
+             -->
+  
   </div>
+ 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import logo from '@/components/logo/logo'
+// import headerSearch from '@/components/header-search/headerSearch'
+// import buttons from '@/components/header-button/buttons'
+// import stories from '@/components/storiesall/stories'
+// import newsContent from '@/components/news-content/news-content'
+
+
+
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    HelloWorld
+    // logo,
+    // headerSearch,
+    // buttons,
+    // stories,
+    // newsContent
+   
   }
-}
+ 
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+
+
+<style scoped>
+/* #app {
+  position: relative;
+  display: grid;
+  grid-template-rows: 70px repeat(auto-fit, 500px);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column dense;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  width: 960px;
+  margin: 0 auto;
+  } */
 </style>
