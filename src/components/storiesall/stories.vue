@@ -1,7 +1,7 @@
 <template>
     <div class="stories">
         <div class="stories__wrapper">
-            <storiesInfo />
+           
             <storiesSubwrapper />
         </div>
     </div>
@@ -9,13 +9,13 @@
 
 <script>
 
-import storiesInfo from '@/components/storiesall/stories-info/stories-info'
+
 import storiesSubwrapper from '@/components/storiesall/storiesSubwrapper/stories-subwrapper'
 
 
 export default {
     components: {
-        storiesInfo,
+      
         storiesSubwrapper
     }
     
