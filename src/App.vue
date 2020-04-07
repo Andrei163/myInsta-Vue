@@ -1,16 +1,8 @@
 <template>
   <div id="app">
+  
  <router-view></router-view>
-  <!-- <logo />
-  <headerSearch />
-  <buttons />
-  <stories />
-  <newsContent />
-  <newsContent />
-  <newsContent />
-  <newsContent />
-  <newsContent />
-             -->
+
   
   </div>
  
@@ -47,9 +39,9 @@ export default {
 /* #app {
   position: relative;
   display: grid;
-  grid-template-rows: 70px repeat(auto-fit, 500px);
+  grid-template-rows: 70px ;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-flow: column dense;
+  
   justify-content: center;
   align-content: center;
   grid-gap: 10px;

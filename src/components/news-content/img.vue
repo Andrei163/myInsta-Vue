@@ -1,7 +1,13 @@
 <template>
-    <img class="news-content__img" src="../../assets/5.jpg">
+    <img class="news-content__img" :src="img">
 </template>
 
+
+<script>
+export default {
+    props: ['img']
+}
+</script>
 <style scoped>
 .news-content__img {
     width: 100%
