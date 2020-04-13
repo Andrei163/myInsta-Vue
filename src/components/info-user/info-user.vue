@@ -4,7 +4,7 @@
       <h2 class="info__name">Name.Surname</h2>
       <p class="info__button-wrapper">
         <button class="info__btn-ls" @click="loading">Загрузить фото</button>
-        <input v-model="picture" />
+        <input v-model="picture" placeholder="укажите URL" />
       </p>
       <span class="info__button-wrapper">
         <button class="info__btn-sign">Подписаться</button>
@@ -55,6 +55,7 @@ export default {
       };
     
       this.$store.dispatch("loadImg", images);
+      
     }
   },
   computed: {
@@ -90,6 +91,9 @@ export default {
 
 .info__btn-ls {
   height: 25px;
+  background: rgb(49, 248, 49);
+  color: #fff;
+  font-weight: bold;
 }
 
 .info__btn-sign {

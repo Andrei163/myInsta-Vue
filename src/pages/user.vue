@@ -4,7 +4,7 @@
     <headerSearch />
     <buttons />
     <stories />
-    <newsContent v-for="(image, index) in images" :key="index" :img="image.url" />
+    <newsContent v-for="(image, index) in imagess" :key="index" :index="index" :img="image.url" />
   </div>
 </template>
 
@@ -30,21 +30,26 @@ export default {
     stories,
     newsContent
   },
-  methods: {
-    loadImg() {
-      let options = {
-        params: {
-          _start: 1,
-          _limit: 15
-        }
-      };
-      this.$http.get(this.endpoint, options).then(function(response) {
-        this.images = response.data;
-      });
-    },
+  // methods: {
+  //   loadImg() {
+  //     let options = {
+  //       params: {
+  //         _start: 1,
+  //         _limit: 10
+  //       }
+  //     };
+  //     this.$http.get(this.endpoint, options).then(function(response) {
+  //       this.images = response.data;
+  //     });
+  //   },
 
-    created: function() {
-      this.loadImg();
+  //   created: function() {
+  //     this.loadImg();
+  //   }
+  // },
+  computed: {
+    imagess() {
+      return this.$store.getters.image;
     }
   },
   mounted() {

@@ -1,8 +1,19 @@
 <template>
-    <p class="news-content__comment">
-		<b>user.random</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias?
+<div>
+<p class="news-content__comment">
+		<b>{{ name }}:</b> {{ message }} 
 	</p>
+
+</div>
+    
 </template>
+
+<script>
+export default {
+    props: ["name", "message", "index"]
+}
+</script>
+
 
 <style scoped>
 .news-content__comment {
